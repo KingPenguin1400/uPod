@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uPod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/dd84a9d367.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.js" integrity="sha512-fCU+rmH3nS/RJaTSl/ylo/PxwWIZwJts3rfxRylSPqGYMJGPLXvPJGOTF+ECb0K5m9rSXbkCNg2PR7WKGWRTVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <input type="file" id="inputFile" webkitdirectory directory multiple/>
+    <div class="container">
+        <div id="songDetails">
+            <nav>
+                <div class="circle0">
+                    <div id="circle0"><i class="fa-solid fa-arrow-left"></i></div>
+                </div>
+                <div class="circle1">
+                    <div id="menuDiv"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </nav><br>
+            <div id="cover"></div>
+            <p id="title" style="font-size: 2rem; margin: 5px; margin-top: 1rem;"></p>
+            <p id="artist"></p>
+            <p id="album"></p>
+            <div class="audio-controls">
+                <audio id="myAudio"></audio>
+                <input type="range" id="progress">
+                <div class="cbuttons">
+                    <div id="backwardDiv"><i class="fa-solid fa-backward"></i></div>
+                    <div id="playPauseDiv"><i class="fa-solid fa-pause" id="playpausebtn"></i></div>
+                    <div id="forwardDiv"><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tags.js"></script>
+    <script src="controls.js"></script>
+    <!--<script src="controls.js"></script>-->
+</body>
+</html>
